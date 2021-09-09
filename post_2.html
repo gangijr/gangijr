@@ -41,13 +41,34 @@
             from, to { border-color: transparent }
             50% { border-color: orange }
         }
+
+        .line-1{
+            position: fixed;
+            top: 50%;  
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255,255,255,.75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);    
+        }
+
+        /* Animation */
+        .anim-typewriter{
+            font-size: 15px;
+            color:white;
+        animation: typing 10s steps(200, end),
+                blink-caret 1s step-end;
+        }
     </style>
 
     <div class="typewriter">
         <h1>Welcome to my second blog post!</h1>
  
     </div>
-    <p style=color:white>
+    <p class="line-1 anim-typewriter">
         This week I decided I wanted to check out CSS animations, as in class we were beginning to work with CSS styling.
         At first I found a simple example of a block moving about the screen and changing color. While that was intersting to look into
         it just was not quite the type of animation that I had in mind. So after some searching around I found examples of typing animation
