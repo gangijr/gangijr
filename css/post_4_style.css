@@ -19,7 +19,8 @@ section .layer2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/blog/images/jmu_post_4.PNG);
+  /* background: url(/blog/images/jmu_post_4.PNG); */
+  background: url("https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/70855332_2338638389587961_336864837759926272_n.png?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=l3ccmOwDnEEAX-bkkgM&_nc_ht=scontent.fric1-1.fna&oh=63715246c66f2451004b7180b9c347d5&oe=618DF8E7");
   background-position: center;
   background-attachment: fixed;
   transition: 1s;
@@ -30,9 +31,10 @@ section .layer1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 450px;
-  background: url(/blog/images/jmu_post_4.PNG);
+  width: 810px;
+  height: 650px;
+  /* background: url(/blog/images/jmu_post_4.PNG); */
+  background: url("https://scontent.fric1-1.fna.fbcdn.net/v/t1.6435-9/70855332_2338638389587961_336864837759926272_n.png?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=l3ccmOwDnEEAX-bkkgM&_nc_ht=scontent.fric1-1.fna&oh=63715246c66f2451004b7180b9c347d5&oe=618DF8E7");
   background-position: center;
   background-attachment: fixed;
   z-index: 1;
