@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post6</title>
+    <link rel="stylesheet"  href="/css/post_6_style.css"/>
+  </head>
+  <body>
+    <h1>Welcome to post 6 for the week of 11/08/2021!</h1>
+    <div class ="innerbox" id="innerbox">
+        <div class="row max-height align-items-center">
+            <div class="col-11 mx-auto col-md-6 quote-container">
+              <button class="button" id="button" onclick="generate()">generate quote</button>
+                <div id="result"></div>
+              <h3 class="text-muted"><span class="quote-icon mr-3"><i class="fas fa-quote-left fa-1x"></i></span><span id="quote">
+                </span></i></span></h3>
+             </div>
+         </div>
+    </div>
+
+    <div>
+        <p>
+          This week I decided to create a quote generator. The basic idea being that when the button is pressed random quote will appear and inspire you!
+          Inspiration for this project came from <a href="https://github.com/malloryeastburn/Random-Quotes-Project">Malloryeastburn</a>'s github.
+          My own code repository for this page can be found here, also feel free to reference the screenshots below.
+        </p>
+
+        <img src="/images/post_6_html.PNG" alt="html"/>
+        <figcaption>HTML code for this page</figcaption>
+      
+        <img src="/images/post_6_css.PNG" alt="css"/>
+        <figcaption>CSS code for this page</figcaption>
+
+        <img src="/images/post_6_js.PNG" alt="js"/>
+        <figcaption>JS code for this page</figcaption>
+    </div>
+    <script>
+      let quotes = [
+        '"You are the shuckiest shuck faced shuck in the world!" ― James Dashner, The Maze Runner',
+        '"Adversity causes some men to break, others to break records." – William A. Ward',
+        '"Accept challenges, so that you may feel the exhilaration of victory." – George S. Patton ',
+        '"The gem cannot be polished without friction, nor man be perfected without trials." – Danish Proverb ',
+        '"Do not give up at half time. Concentrate on winning the second half." – Paul "Bear" Bryant',
+        '"The difference between the impossible and the possible lies in a persons determination." – Tommy Lasorda ',
+        '"Defeat is not the worst of failures. Not to have tried is the true failure." – George Edward Woodberry ',
+        "“In order to write about life first you must live it.”– Ernest Hemingway",
+        "“Innovation is the outcome of a habit, not a random act.” – Sukant Ratnakar",
+        "“Any sufficiently advanced technology is indistinguishable from magic.” – Arthur C. Clarke",
+      ];
+        function generate(){
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            const html = ` Today's New Quote is:
+            ${randomQuote}`;
+            document.querySelector('#result').textContent = html;
+        }
+    </script>
+  </body>
+</html>
